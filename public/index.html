@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>My awesome resume</title>
+    <meta name="description" content="My awesome resume">
+    <meta name="author" content="Johny Catswill">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function(){ 
+          const button = window.document.querySelector('.actions__download-btn');
+          button.onclick = function() {
+            const  source = window.document.querySelector('.resume-page');
+            html2pdf(source);
+          };
+        }, false);
+      })();
+    </script>
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="logo">
+          <a href="/" class="logo__text">CV Super Builder</a>
+        </div>
+        <div class="actions">
+          <button class="actions__download-btn">Download PDF</button>
+        </div>
+      </div>   
+    </header>
+    <main class="resume-container">
+      <div class="resume-page">
+        <div  class="resume-page__content">
+
+          <div class="grid-container">
+          <div class="grid-item1">
+             
+        <img src="/images/gg1.jpg" width="70" height="70">
+            
+          </div> 
+          <div class="grid-item2">Mikhail Martynenko<div><font>software developer</font></div> </div> 
+          
+          <div class="grid-item3">s.avdyakov@gmail.com +7(906)345-75-12</div> 
+
+          <div class="grid-item4">To obtain a professional position in the
+             consulting industry utilizing my relevant experience, technical 
+             expertise, and problem solving skills.</div> 
+
+          <div class="grid-item5"><span class="colorPurple">EDUCATION</span> </class>  
+        <div>
+         <h4>  Bachelor of Science in Computer Science, 
+          South Federal University, Rostov-on-Don, Russia, GPA: 3.0</h4>
+        </div>
+  <div class="T2">
+        Selected Coursework: Data Structures (Java), 
+        Web Applications, Database Applications,
+         Distributed Systems, Computer Systems (C and Unix), 
+         Great Theoretical Ideas in Computer Science 
+        </class>
+        </div>
+        <div class= "year"><h4> Jun 2017 - Jan 2021</h4></div>
+      </div>
+          <div class="grid-item6"><span class="colorOrange">SKILLS </span>
+        <h3>Javascript</h3>
+          <h3>HTML</h3>
+          <h3>CSS</h3>
+          <h3>Node.js</h3>
+          <h3>C# </h3>
+          </div>
+          <div class="grid-item7"><span class ="colorGreen">INTERNSHIP EXPERIENCE</span></class>
+            <h4>Software engineer intern at Resume.io,</h4>
+            <h3>— Created new functionality for state-level prescription drug information system</h3>
+            <h3>— Worked with end users to determine their information needs</h3>
+            <h3>— Wrote application to create custom surveys</h3>
+            <h3>— Migrated existing website from SQL Membership to to ASP.NET</h3>
+          </div> 
+         
+          <div class="grid-item9"><span class ="colorBlue"> LANGUAGES</span> </class>
+            <h3>Russuian</h3>
+          <h3>English</h3>
+          <h3>Spanish</h3>
+          </div> 
+      
+          <div class="grid-item10"><span class ="colorRed"> PROJECTS AND PUBLIC TALKS</span> </class>
+            <h4>Koa generators vs. async, Node.js, Barcelona
+            <br><div class="ff">Jun 2019</class></div>
+            <h4>Koa & middleware evolution, HolyJS, Moscow
+            <br><div class="ff">May 2016</h4></div>
+
+          <div class = "picture ">
+        <img src="/images/Fill 51.png">&ensp;
+        <img src="/images/Ball.png">&ensp;
+        <img src="/images/Shape.png">&ensp;</class>
+      </div>
+          </div>
+          </div>
+          
+         
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
